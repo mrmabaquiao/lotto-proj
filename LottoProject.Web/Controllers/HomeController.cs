@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LottoProject.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,11 +9,17 @@ namespace LottoProject.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private ILottoDataSource _db;
+
+        public HomeController(ILottoDataSource db)
+        {
+            _db = db;
+        }
+
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-
-            return View();
+            var allDraws = _db.Draws;
+            return View(allDraws);
         }
 
         public ActionResult About()
