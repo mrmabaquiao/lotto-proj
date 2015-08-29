@@ -8,10 +8,15 @@
 
 <h2>@ViewBag.Title </h2>
 
-<ul>
-@foreach ( var draw in Model)
+<ul class="list-group">
+    @foreach (var draw in Model)
     {
-    <li>@Html.ActionLink(draw.Catergory, "Detail" , "Draws", new { draw.Id},null) </li>
+        if (draw.DrawDate.Date == DateTime.Now.Date)
+        {
+            <li class="list-group-item">@Html.ActionLink(draw.Catergory, "Detail", "Draws", new { draw.Id }, null) | @draw.FirstDigit | @draw.SecondDigit | @draw.ThirdDigit | @draw.FourthDigit | @draw.FifthDigit | @draw.SixthDigit </li>
+        }
     }
 </ul>
+
+
 
