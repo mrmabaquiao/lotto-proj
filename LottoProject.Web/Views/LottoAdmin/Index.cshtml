@@ -1,0 +1,19 @@
+﻿@model IEnumerable<LottoProject.Domain.Draw>
+
+@{
+    ViewBag.Title = "All Draws";
+}
+
+<h2>@ViewBag.Title </h2>
+
+<ul class="list-group">
+    @foreach (var draw in Model)
+    {
+      
+            <li class="list-group-item">@Html.ActionLink(draw.Catergory, "Detail", "Draws", new { draw.Id }, null) | @draw.FirstDigit | @draw.SecondDigit | @draw.ThirdDigit | @draw.FourthDigit | @draw.FifthDigit | @draw.SixthDigit </li>
+
+    }
+</ul>
+
+
+
