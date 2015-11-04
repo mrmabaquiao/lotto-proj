@@ -13,7 +13,13 @@
             <li class="list-group-item">@Html.ActionLink(draw.Catergory, "Detail", "Draws", new { draw.Id }, null) | @draw.FirstDigit | @draw.SecondDigit | @draw.ThirdDigit | @draw.FourthDigit | @draw.FifthDigit | @draw.SixthDigit </li>
 
     }
+
+
 </ul>
+
+<p>
+    @Html.ActionLink("Add Draw", "Create", "LottoAdmin", new { @class = "btn btn-primary" })
+</p>
 
 
 

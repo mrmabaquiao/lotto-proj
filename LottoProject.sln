@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoProject.Web", "LottoPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoProject.Engine", "LottoProject.Engine\LottoProject.Engine.csproj", "{916009DA-7709-447D-A1DA-0DCD4D4923EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoProject.Common", "LottoProject.Common\LottoProject.Common.csproj", "{F75DA442-EE60-4ED9-AC48-ED0B74A9218C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{916009DA-7709-447D-A1DA-0DCD4D4923EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{916009DA-7709-447D-A1DA-0DCD4D4923EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{916009DA-7709-447D-A1DA-0DCD4D4923EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75DA442-EE60-4ED9-AC48-ED0B74A9218C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75DA442-EE60-4ED9-AC48-ED0B74A9218C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75DA442-EE60-4ED9-AC48-ED0B74A9218C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75DA442-EE60-4ED9-AC48-ED0B74A9218C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
